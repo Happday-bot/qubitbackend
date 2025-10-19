@@ -172,7 +172,7 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:4200"],
+    allow_origins=["https://happday-bot.github.io"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -693,4 +693,5 @@ def get_all_students():
 
 # # ---------- Run Uvicorn ----------
 # if __name__ == "__main__":
+
 #     uvicorn.run("mongobackend:app", host="localhost", port=8000, reload=True,proxy_headers=True)
